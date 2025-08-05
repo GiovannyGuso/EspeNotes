@@ -25,7 +25,7 @@ window.addEventListener("beforeinstallprompt", (e) => {
 });
 
 //CUANDO SE CARGA EL DOM
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
     MAIN = document.querySelector("#main");
     MODAL_POST = document.querySelector("#modal-post-section");
 
@@ -37,8 +37,9 @@ window.addEventListener("load", () => {
     BTN_CLOSE_POST = document.querySelector("#btn-post-cancel");
     BTN_CLOSE_POST.addEventListener("click", closePostModal);
 
-    if(navigator.serviceWorker) {
-        const res = navigator.serviceWorker.register("/sw.js");
+    if("serviceWorker" in navigator) {
+        const res = await navigator.serviceWorker.register("/sw.js");
+        console.log("Service Worker registrado", res);
         if (res) {
             console.log("Service Worker registrado correctamente");
         }
