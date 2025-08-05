@@ -27,3 +27,5 @@ window.addEventListener("load", () => {
   BTN_CANCEL_POST = document.querySelector("#btn-post-cancel");
   BTN_CANCEL_POST.addEventListener("click", closePostModal); // Asigna el evento al botón de cerrar post
 });
+
+

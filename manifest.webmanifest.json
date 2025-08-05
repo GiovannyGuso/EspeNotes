@@ -1,0 +1,31 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "ESPEnotes SD",
+  "short_name": "ESPEnotes",
+  "description": "Aplicacion que permite toma notas de forma rapida y sencilla.",
+  "theme_color": "#1a4d80",
+  "background_color": "#1a4d80",
+  "icons": [{
+    "src": "src/img/icons/icon-144x144.png",
+    "sizes": "144x144"
+  }, 
+     {
+    "src": "src/img/icons/icon-128x128.png",
+    "sizes": "128x128", "type": "image/png"
+  }, {
+    "src": "src/img/icons/icon-192x192.png",
+    "sizes": "192x192", "type": "image/png"
+  }, {
+    "src": "src/img/icons/icon-256x256.png",
+    "sizes": "256x256", "type": "image/png"
+  }, {
+    "src": "src/img/icons/icon-512x512.png",
+    "sizes": "512x512", "type": "image/png"
+  }],
+  "scope": ".",
+  "id": "superracer",
+  "start_url": "/start.html",
+  "display": "fullscreen",
+  "orientation": "landscape"
+}
